@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport"
-           content="width=device-width, initial-scale=1" />
-           <title>Campus Notice</title>
-   <link rel=“stylesheet” href=“style.css” />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Notices</title>
 </head>
-<body style="background-color:green"> 
-    <header text-align:center;>Don Mariano Marcos Memorial State University</header>
-    <nav> <a href="notice.html">home</a> </nav>
+<body>
+  <header>
+    <h1>Campus Notices</h1>
 
-    <main style="background-color:pink">
+    <nav aria-label="Main">
+  <ul>
+    <li><a href="#notices">Notices</a></li>
+    <li><a href="#deadlines">Deadlines</a></li>
+    <li><a href="#submit">Post a notice</a></li>
+  </ul>
+</nav>
 
-   <div style="background-color:Green">DMMMSU</div>
-   <h2 style="background-color:dodgerBlue">Campus Notice</h2>
-   
-   
-    </main>
-    <div style="background-color:pink">Favorite Food</div>
-    <ul>
-        <li>Adobo</li>
-        <li>Sinigang</li>
-        <li>Paksiw</li>
-    </ul>
-    <ol>
-        <li>Adobo</li>
-        <li>Sinigang</li>
-        <li>Paksiw</li>
-    </ol>
+<section id="submit">
+  <h2>Post a notice</h2>
+  <form action="#" method="post">
+    <p>
+      <label for="title">Title</label><br>
+      <input type="text" id="title" name="title" required maxlength="100">
+    </p>
+    <p>
+      <label for="category">Category</label><br>
+      <select id="category" name="category">
+        <option value="academic">Academic</option>
+        <option value="event">Event</option>
+        <option value="general">General</option>
+      </select>
+    </p>
+    <p>
+      <label for="date">Date</label><br>
+      <input type="date" id="date" name="date">
+    </p>
+    <p>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </p>
+    <p>
+      <label for="email">Your email</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+    <button type="submit">Post notice</button>
+  </form>
+</section>
 
-   <img src="/Users/mac11/Downloads/images (1).jpeg">
+<section id="deadlines">
+  <h2>Upcoming deadlines</h2>
+  <table>
+    <caption>Deadlines this month</caption>
+    <thead>
+      <tr><th scope="col">Activity</th><th scope="col">Date</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Enrolment ends</td><td>20 January</td></tr>
+      <tr><td>Programming contest registration</td><td>25 January</td></tr>
+    </tbody>
+  </table>
+</section>
+  </header>
+  <main>
+    
+    <article class="notice">
+      <h2>A Folden Silver: DEFEMNHS educators showcase Agoo culture in Dance of Colors.</h2>
+      <p>Educators from Don Eufemio F. Eriguel Memorial National High School, proudly representing Cluster IV (Agoo West, Agoo East, Aringay, and Caba), captured 1st Runner-Up in the Dance of Colors: A Variety Show Competition held on November 20, 2026, at the Speaker Pro-Tempore Francisco I. Ortega Convention Center.
+        Staged as one of the highlights of the La Union Provincial Education Summit 2026, the competition gathered educators across the province to celebrate artistry, camaraderie, and local heritage.
+        Set to the lively rhythm of the Ilocano folk classic Pamulinawen, the DEFEMNHS contingent delivered a vibrant performance showcasing the rich cultural identity of Agoo, prominently featuring the town’s famed Dinengdeng Festival.
+        The winning dance troupe was composed of: 
 
-   <form action="/api/notices" method="post">
-     <label for="title">Title</label>
-     <input id="title" name="title"
-            type="text" required />
+    <ul>Mr. Junelle H. Verial</ul>
+    <ul>Ms. Erika R. Fangonilo</ul>
+    <ul>Mr. Richard Von G. Tejada</ul>
+    <ul>Ms. Russell Mae M. Sapla</ul>
+    <ul>Mr. Kismoore D. Padua</ul>
+    <ul>Ms. Marilou M. Domondon</ul>
+    <ul>Mr. Rodrigo O. Romero</ul>
+    <ul>Ms. Jennilyn B. Ramirez</ul>
+    <ul>Mr. Ray Karlo J. Carrera</ul>
+    <ul>Ms. Antonette Lou M. Salom</ul>
 
-      <label for="msg">Message</label>  
-      <textarea id="msg" name="message"></textarea>  
+        Behind the routines and production was the management team of Alvin O. Doctolero, Brenda Lyn B. Hernandez, and Catherine M. Romero, under the leadership of School Principal IV Dr. Adela C. Libunao.
+        The school also extends its heartfelt gratitude to Dr. Luisito Libatique, Public Schools District Supervisor, whose steadfast encouragement and support helped propel the Agoo delegation to a podium finish.
+        Appreciation and heartfelt gratitude is also given to the Municipality of Agoo, led by Hon. Mayor Frank O. Sibuma, for the assistance and support provided to the entire DEFEMNHS contingent. Agyaman kami unay!
+        See more photos: https://drive.google.com/.../19fzKLTvDD2eVo1nNEhtjnmzUNkP...
+        #DepEdPhilippines</p>
+    </article>
 
-      <button class="btn">Post Notice</button>
-   </form>
+    <article class="notice">
+      <h2>Agyaman kami, unay!</h2>
+      <p>hrough this video greeting, DEFEMNHS, under the leadership of Dr. Adela C. Libunao extends its heartfelt appreciation to the Department of Education under Secretary Sonny Angara and His Excellency Ferdinand R. Marcos Jr. for their continuous effort in the digitization of education through the DepEd Computerization Program.
+        #DepEdPhilippines</p>
+    </article>
 
-   <footer>College of Computer Science</footer>
+    <article class="notice">
+      <h2>DEFEMNHS joins 4th Quarter NSED, leads disaster readiness drill</h2>
+      <p>Don Eufemio F. Eriguel Memorial National High School (DEFEMNHS) joined the nation in participating in the 4th Quarter Nationwide Simultaneous Earthquake Drill (NSED) to strengthen disaster preparedness and resilience among students and staff.
+        Led by the School Disaster Risk Reduction and Management (SDRRM) coordinators, Mr. Cesar Tubera and Mr. Francious Mitchelle Fangonilo, learners actively demonstrated the proper safety procedures before, during, and after an earthquake. During the alarm, students executed the "Duck, Cover, and Hold" protocol before calmly proceeding to the designated evacuation area on the DEFEMNHS open grounds.
+        Following the drill, a post-evaluation activity was conducted at the Agoo Farmers' Gymnasium to assess the execution and identify key areas for continuous improvement in safety protocols.
+        Under the leadership of Dr. Adela C. Libunao, DEFEMNHS remains steadfast in fostering a safe school community through proactive disaster preparedness drills and key safety initiatives.
+        See more photos: https://drive.google.com/.../1IKHuxaPx99GUw0XwtvT8szcum9s...
+        #DepEdPhilippines</p>
+    </article>
+
+  </main>
+  <footer>
+    <p>DepEd Don Eufemio F. Eriguel Memorial National High School</p>
+  </footer>
 </body>
 </html>
